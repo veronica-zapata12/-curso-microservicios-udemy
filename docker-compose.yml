@@ -126,6 +126,8 @@ services:
     depends_on:
       - registry-discovery
       - configuration
+    ports:
+      - 8081:8081 
       
  ##########################################################################     
  #transaction service
@@ -142,7 +144,8 @@ services:
     depends_on:
       - registry-discovery
       - configuration
-  
+    ports:
+      - 8082:8082 
       
  ##########################################################################     
  #database service
